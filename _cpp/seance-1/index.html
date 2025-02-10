@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CPP-1</title>
+    <link rel="StyleSheet" href="../../../assets/core.css" />
+  </head>
+  <body>
+    <h1>CPP - 1</h1>
+    <h2>Important notes</h2>
+    <p>
+      Makaynch fer9 bin wahad wasel wwahad la, mghir ana dak li wasal kaykhdam
+      wydir effort sometimes doublé.
+    </p>
+    <p>
+      Even in math, ila 3tit l 2 dyal nass nafs lcours wwahad intelligent wwahad
+      la, ghady ydirou nafs resultat, lfer9 kayan ghi fle temp, mais les 2
+      y9drou ydirou nafs resultat.
+    </p>
+    <p>
+      Hard skills bhal les langues de programmations wles concepts dyal
+      programming kaybghiw extensive practice wmea lwa9t, things start to make
+      sense.
+    </p>
+    <p>
+      Hawal tfham l concept, wmnba3d thfad les definitions dyal koul concept
+      katsadaf meah b3a9lak, machi t7fad ghi definition. Khass tfham koul part
+      mn la definition.
+    </p>
+    <p>
+      Rak t9ra engineering, mindset dyal engineer, makhasch t9alab ghi ela
+      sahla, khass dir effort doublé wt9allab rassak matsnach chi wahad ywrik
+      koulchi.
+    </p>
+    <p>
+      Never too late mate, wakha hta ltali dyal l'année, toujours kayan chance
+      to recover.
+    </p>
+    <p>
+      As an engineer, khass t3raf bli rak m7asseb ela koul haja tgoulha,
+      wtomorrow, t9dr tgéré equipe, donc khass tkoun endak mindset
+      wcommunication mzyana.
+    </p>
+
+    <h1>Structures des donées</h1>
+    <h2>1. Definition:</h2>
+    <p>
+      Une structure de données en C++ est une manière d'organiser et de stocker
+      des données en mémoire pour faciliter leur accès et leur manipulation.
+      Exemples : tableaux, listes chaînées, piles, files, arbres et tables de
+      hachage.
+    </p>
+    <p>
+      Les tableaux sont une structure de donées. Kayorganiséw les donées fdes
+      cases memoire adjacent wkaykoun 3end koul element nafs le type.
+    </p>
+
+    <h2>2. Phases pour utiliser une structure de donée:</h2>
+    <h3>2.1. Phase 1: Definition</h3>
+    <pre>
+      struct Point {
+        float x;
+        float y;
+        char Nom; 
+      }
+    </pre>
+    <h3>2.1. Phase 1: L'utilisation</h3>
+    <pre>
+      int main() {
+        Point a, *p;
+
+        a.x = 5;
+        a.y = 6;
+        a.Nom = 'A';
+
+        p = new Point;
+        p->x = 2;
+        p->y = 4;
+        p->Nom = 'B';
+      }
+    </pre>
+
+    <p>
+      Phase 1: katcréer un type wla structure de donée li ghadi mnba3d
+      treprésenté biha les donée dyalak.
+    </p>
+    <p>
+      Pahse 2: katkhdam bhad type jdid, ka declarer bhal les variables normal
+      int a; la meme chose: Point a; bhala créet type jdid dyalak.
+    </p>
+    <p>
+      Ila bghit tkhdam btype fih 3 dyal les valeur bha nom prenom age, makanch
+      chi data type f langage li tkhalik tstocké variable bhad chkel, donc had
+      le type khass nta tcréeh. Kifach tcréeh ? -> b <b>struct</b>
+    </p>
+    <p>Ila khdamt b Point a; hadi katsma structure simple</p>
+    <p>Bach dakhal les donées, katkhdam b (.) = a.x = 5;</p>
+    <p>Ila declarit structure b pointeur, katkhdam b (->)</p>
+
+    <h2>L'utilisation des structure dans les fonction</h2>
+    <p>Similaire de la facon de variable simple, Le meme principe</p>
+
+    <pre>
+      void Saisir(Point& p) { // Ici p est défini comme reference
+        cin >> p.x >> p.y >> p.Nom;
+      }
+
+      int main() {
+        Point p; // Declaration
+
+        Saisir(p);
+      }
+    </pre>
+
+    <p>
+      Concernant le passage, les mémes chose qui applique aux variables simple,
+      est appliqué dans les structure.
+    </p>
+
+    <h2>Images de seance:</h2>
+    <div id="seance-images">
+      <img src="./0.jpg" />
+      <img src="./1.jpg" />
+      <img src="./2.jpg" />
+      <img src="./3.jpg" />
+    </div>
+  </body>
+</html>

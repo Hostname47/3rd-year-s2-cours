@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  style="height: 100%; padding-bottom: 80px; box-sizing: border-box"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="StyleSheet" href="assets/core.css" />
+  </head>
+  <body
+    style="
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    "
+  >
+    <h1 style="text-align: center">3-GI-B Hell</h1>
+    <p style="text-align: center; letter-spacing: 2px; margin-top: 24px">
+      A place where you can find anything organized ✨
+    </p>
+    <div id="links-container">
+      <a class="link-button" href="/_cpp">CPP</a>
+      <a class="link-button" href="/_cpp">JAVA</a>
+      <a class="link-button" href="/_cpp">PHP</a>
+      <a class="link-button" href="/_cpp">Linux</a>
+      <a class="link-button" href="/_cpp">Recherche Operationel</a>
+      <a class="link-button" href="/_cpp">Bases de donées</a>
+      <a class="link-button" href="/_cpp">Art & Culture</a>
+      <a class="link-button" href="/_cpp">Anglais</a>
+      <a class="link-button" href="/_cpp">Francais</a>
+    </div>
+
+    <div id="signature-container">
+      <span className="signature-text">Designed with</span>
+      <span id="signature-heart-container" title="Love">
+        <svg
+          id="heart"
+          fill="#FF0000"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 100 94.5"
+        >
+          <path
+            d="M86.82,26.63v-7.3H78.64V12H62.27v7.29H54.09v7.3H45.91v-7.3H37.73V12H21.36v7.29H13.18v7.3H5V48.5h8.18v7.29h8.18v7.29h8.19v7.29h8.18v7.3h8.18V85h8.18V77.67h8.18v-7.3h8.18V63.08h8.19V55.79h8.18V48.5H95V26.63Z"
+          />
+        </svg>
+      </span>
+      <span className="signature-text">
+        by
+        <a
+          href="https://nassri.netlify.app"
+          target="_blank"
+          style="color: #59e34a; text-decoration: none"
+        >
+          Mouad Nassri
+        </a>
+      </span>
+    </div>
+
+    <script>
+      setInterval(() => {
+        const heart = document.getElementById("heart");
+
+        if (heart.style.width == "19px") {
+          heart.style.width = "16px";
+          heart.style.height = "16px";
+        } else {
+          heart.style.width = "19px";
+          heart.style.height = "19px";
+        }
+      }, 400);
+    </script>
+  </body>
+</html>

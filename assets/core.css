@@ -1,0 +1,90 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  padding: 20px 120px;
+  background-color: rgb(17, 17, 17);
+  color: rgb(228, 228, 228);
+}
+
+#seance-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#seance-images img {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 12px;
+}
+
+h2 {
+  color: #29a0f1;
+}
+
+pre {
+  color: #32d132;
+}
+
+.green {
+  color: #32d132 !important;
+}
+
+#links-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px;
+}
+
+.link-button {
+  color: #29a0f1;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+#signature-container {
+  font-size: 13px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  letter-spacing: 2px;
+
+  /* background-color: #181818; */
+  width: max-content;
+  margin: 0 auto;
+  padding: 14px 20px;
+  /* border: 1.6px solid rgb(255, 255, 255); */
+}
+
+#signature-heart-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 19px;
+  height: 19px;
+  margin: 0 2px;
+}
+
+.signature-text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.signature-text .link {
+  color: #23c4ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#signature {
+  height: 36px;
+  margin-top: 8px;
+  margin-right: 20px;
+}
