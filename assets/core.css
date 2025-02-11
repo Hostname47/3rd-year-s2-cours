@@ -2,8 +2,12 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+p {
+  font-size: 15px;
+}
+
 body {
-  padding: 20px 120px;
+  padding: 20px 160px;
   background-color: rgb(17, 17, 17);
   color: rgb(228, 228, 228);
 }
@@ -87,4 +91,14 @@ pre {
   height: 36px;
   margin-top: 8px;
   margin-right: 20px;
+}
+
+p {
+  line-height: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 16px;
+  }
 }
