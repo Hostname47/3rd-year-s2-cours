@@ -5,7 +5,7 @@ import CppIndex from "./pages/cpp";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/cpp" element={<CppIndex />} />
